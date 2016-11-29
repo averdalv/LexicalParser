@@ -1,0 +1,28 @@
+var User = function (name) {
+
+    var sessions = [];
+    var totalDuration = 0;
+    var x=2.7e-4
+   var s="\\\""
+    this.addSession = function (sessionDate, duration) {
+
+        sessions.push({
+            "sessionDate" : sessionDate,
+            "duration"    : duration
+        });
+        totalDuration += duration;
+        return totalDuration;
+    };
+
+    this.getData = function () {
+        return {
+            "name"    : name,
+            "total"   : totalDuration,
+            "sessions": sessions.slice()
+        };
+    };
+    };
+/*dfdf
+dfsdf*/
+/*0x34f
+var1
